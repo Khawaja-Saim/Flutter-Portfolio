@@ -233,7 +233,10 @@ class HeroSection extends StatelessWidget {
                   color: AppColors.primary.withOpacity(0.4),
                   width: 2,
                 ),
-                image: DecorationImage(image: AssetImage(AppImages.myImage)),
+                image: DecorationImage(
+                  image: AssetImage(AppImages.myImage),
+                  fit: BoxFit.cover,
+                ),
               ),
 
               // child: Center(
