@@ -3,6 +3,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:saim_portfolio/new_code/app_constants.dart';
+import 'package:saim_portfolio/new_code/app_images.dart';
 import 'package:saim_portfolio/new_code/responsive.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -232,17 +233,19 @@ class HeroSection extends StatelessWidget {
                   color: AppColors.primary.withOpacity(0.4),
                   width: 2,
                 ),
+                image: DecorationImage(image: AssetImage(AppImages.myImage)),
               ),
-              child: Center(
-                child: Text(
-                  'MS',
-                  style: GoogleFonts.spaceGrotesk(
-                    fontSize: isMob ? 52 : 72,
-                    fontWeight: FontWeight.w800,
-                    color: AppColors.primary,
-                  ),
-                ),
-              ),
+
+              // child: Center(
+              //   child: Text(
+              //     'MS',
+              //     style: GoogleFonts.spaceGrotesk(
+              //       fontSize: isMob ? 52 : 72,
+              //       fontWeight: FontWeight.w800,
+              //       color: AppColors.primary,
+              //     ),
+              //   ),
+              // ),
             ),
           ],
         )
